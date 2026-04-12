@@ -3,6 +3,7 @@ createCanvas(600, 600);
 background(202, 193, 222)
 }
 function draw() { 
+noStroke();
   
 //back hair
 fill(69, 54, 48);
