@@ -8,5 +8,500 @@
 <h1>Self Portrait</h1>
 
 <iframe src="better_portrait/index.html" height="604" width="601" title="p5 selfie"></iframe>
+
+<p>
+I love making portraits, making this project feel right up my alley. My reference was of a self portrait I had made previously, so it was a fun experience getting to recontextualize it. The original was a fully rendered and monochrome, so it was interesting seeing the same image, but with cell-shading and more color.
+</p>
+<br>
+
+<pre>
+function setup() {
+createCanvas(600, 600);
+background(202, 193, 222)
+}
+function draw() { 
+noStroke();
+  
+//back hair
+fill(69, 54, 48);
+beginShape();
+vertex(435, 131);
+vertex(458, 150);
+vertex(482, 199);
+vertex(482, 222);
+vertex(494, 260);
+vertex(494, 296);
+vertex(488, 327);
+vertex(504, 368);
+vertex(515, 422);
+vertex(493, 472);
+vertex(479, 490);
+vertex(454, 539);
+vertex(416, 537);
+vertex(350, 506);
+vertex(348, 356);
+endShape();
+  
+//neck
+fill(247, 225, 205);
+beginShape();
+vertex(376, 398);
+vertex(370, 418);
+vertex(369, 460);
+vertex(376, 523);
+vertex(205, 498);
+vertex(236, 403);
+vertex(224, 357);
+vertex(247, 341);
+endShape();
+
+//neck base shadow
+fill(115, 86, 77, 50);
+beginShape();
+vertex(376, 398);
+vertex(370, 418);
+vertex(369, 460);
+vertex(376, 523);
+vertex(205, 498);
+vertex(236, 403);
+vertex(224, 357);
+vertex(247, 341);
+endShape(); 
+ 
+//face shape
+fill(247, 225, 205);
+beginShape();
+vertex(436, 169);
+vertex(441, 209);
+vertex(441, 224);
+vertex(440, 237);
+vertex(434, 247);
+vertex(438, 272);
+vertex(437, 299);
+vertex(427, 344);
+vertex(419, 368);
+vertex(406, 391);
+vertex(391, 405);
+vertex(368, 409);
+vertex(335, 406);
+vertex(298, 392);
+vertex(249, 372);
+vertex(204, 327);
+vertex(235, 193);
+vertex(314, 110);
+vertex(379, 129);
+vertex(426, 146);
+endShape();
+
+//shadow
+fill(115, 86, 77, 200);
+beginShape();
+vertex(342, 409);
+vertex(271, 412);
+vertex(264, 446);
+vertex(289, 481);
+vertex(306, 486);
+vertex(309, 494);
+vertex(263, 507);
+vertex(205, 498);
+vertex(190, 328);
+vertex(232, 187);
+vertex(294, 175);
+vertex(293, 213);
+vertex(267, 238);
+vertex(255, 277);
+vertex(273, 314);
+vertex(290, 344);
+vertex(307, 368);
+vertex(321, 371);
+vertex(349, 389);
+vertex(349, 389);
+vertex(378, 408);
+vertex(368, 409);
+endShape();
+
+//darker neck shadow
+fill(36, 22, 21, 100);
+beginShape();
+vertex(339, 407);
+vertex(277, 400);
+vertex(197, 386);
+vertex(227, 351);
+vertex(250, 373);
+endShape();
+
+//right eyebrow
+fill(51, 40, 34);
+beginShape();
+vertex(383, 227);
+vertex(384, 220);
+vertex(396, 214);
+vertex(424, 212);
+vertex(434, 217);
+vertex(444, 226);
+vertex(442, 228);
+vertex(423, 219);
+vertex(405, 221);
+endShape();
+
+//left eyebrow
+fill(51, 40, 34);
+beginShape();
+vertex(346, 228);
+vertex(336, 215);
+vertex(301, 213);
+vertex(268, 220);
+vertex(265, 226);
+vertex(291, 221);
+vertex(312, 221);
+vertex(332, 225);
+endShape();
+
+//hair shadow
+fill(51, 40, 34);
+beginShape();
+vertex(442, 161);
+vertex(450, 145);
+vertex(446, 120);
+vertex(403, 106);
+vertex(361, 125);
+vertex(344, 146);
+vertex(380, 137);
+vertex(413, 146);
+endShape();
+
+//hair
+fill(69, 54, 48);
+beginShape();
+vertex(179, 405);
+vertex(148, 442);
+vertex(121, 473);
+vertex(105, 516);
+vertex(155, 520);
+vertex(198, 538);
+vertex(225, 520);
+vertex(250, 483);
+vertex(259, 463);
+vertex(250, 410);
+vertex(244, 390);
+vertex(228, 355);
+endShape();
+
+beginShape();
+vertex(239, 232);
+vertex(281, 199);
+vertex(328, 166);
+vertex(389, 118);
+vertex(412, 112);
+vertex(442, 124);
+vertex(449, 158);
+vertex(455, 140);
+vertex(445, 115);
+vertex(423, 97);
+vertex(372, 72);
+vertex(281, 64);
+vertex(203, 101);
+vertex(147, 167);
+vertex(132, 226);
+vertex(123, 285);
+vertex(121, 331);
+vertex(139, 387);
+vertex(162, 425);
+vertex(225, 448);
+vertex(256, 447);
+vertex(238, 389);
+vertex(226, 350);
+vertex(231, 307);
+vertex(223, 252);
+endShape();
+
+//hair shine
+fill(240, 205, 173, 90);
+beginShape();
+vertex(158, 192);
+vertex(168, 157);
+vertex(178, 144);
+vertex(212, 115);
+vertex(196, 145);
+vertex(179, 174);
+vertex(191, 142);
+vertex(176, 160);
+endShape();
+beginShape();
+vertex(194, 182);
+vertex(197, 156);
+vertex(209, 134);
+vertex(225, 120);
+vertex(212, 143);
+endShape();
+beginShape();
+vertex(214, 178);
+vertex(230, 152);
+vertex(251, 128);
+vertex(243, 149);
+vertex(234, 161);
+endShape();
+beginShape();
+vertex(205, 217);
+vertex(220, 196);
+vertex(228, 181);
+vertex(221, 182);
+vertex(254, 162);
+vertex(227, 192);
+vertex(244, 183);
+vertex(234, 196);
+vertex(222, 203);
+endShape();
+beginShape();
+vertex(364, 119);
+vertex(390, 98);
+vertex(429, 102);
+vertex(445, 115);
+vertex(455, 140);
+vertex(453, 146);
+vertex(444, 159);
+vertex(447, 151);
+vertex(442, 125);
+vertex(413, 112);
+vertex(387, 108);
+endShape();
+beginShape();
+vertex(469, 209);
+vertex(482, 222);
+vertex(494, 260);
+vertex(494, 297);
+vertex(488, 326);
+vertex(477, 365);
+vertex(480, 320);
+vertex(486, 287);
+vertex(482, 279);
+vertex(477, 311);
+vertex(479, 277);
+vertex(475, 243);
+vertex(485, 261);
+vertex(481, 235);
+endShape();
+fill(240, 205, 173, 50);
+beginShape();
+vertex(428, 489);
+vertex(422, 454);
+vertex(421, 428);
+vertex(443, 453);
+vertex(445, 498);
+vertex(440, 466);
+vertex(428, 445);
+vertex(431, 464);
+endShape();
+fill(240, 205, 173, 90);
+beginShape();
+vertex(463, 509);
+vertex(469, 470);
+vertex(464, 431);
+vertex(468, 396);
+vertex(483, 424);
+vertex(480, 470);
+endShape();
+beginShape();
+vertex(493, 472);
+vertex(499, 428);
+vertex(489, 390);
+vertex(493, 367);
+vertex(504, 369);
+vertex(515, 422);
+endShape();
+fill(240, 205, 173, 50);
+beginShape();
+vertex(183, 372);
+vertex(166, 355);
+vertex(157, 315);
+vertex(168, 265);
+vertex(187, 243);
+vertex(170, 280);
+vertex(165, 322);
+vertex(177, 361);
+vertex(176, 340);
+vertex(180, 320);
+vertex(181, 351);
+endShape();
+beginShape();
+vertex(163, 426);
+vertex(139, 387);
+vertex(121, 331);
+vertex(123, 284);
+vertex(132, 225);
+vertex(147, 290);
+vertex(142, 332);
+endShape();
+beginShape();
+vertex(178, 447);
+vertex(160, 500);
+vertex(155, 520);
+vertex(152, 520);
+vertex(149, 510);
+vertex(155, 490);
+endShape();
+
+//right eye
+fill(0);
+beginShape();
+vertex(383, 251);
+vertex(386, 241);
+vertex(397, 233);
+vertex(402, 231);
+vertex(405, 230);
+vertex(416, 229);
+vertex(427, 233);
+vertex(434, 240);
+vertex(428, 248);
+vertex(422, 253);
+vertex(410, 256);
+endShape();
+
+//right eye white
+fill(210, 208, 214)
+beginShape();
+vertex(383, 251);
+vertex(387, 243);
+vertex(404, 234);
+vertex(410, 235);
+vertex(417, 237);
+vertex(422, 243);
+vertex(419, 250);
+vertex(414, 254);
+vertex(410, 256);
+endShape();
+
+//right iris
+fill(3, 69, 61);
+beginShape();
+vertex(404, 234);
+vertex(397, 236);
+vertex(387, 243);
+vertex(383, 251);
+vertex(400, 254);
+vertex(405, 246);
+vertex(405, 238);
+endShape();
+
+//left eye
+fill(0);
+beginShape();
+vertex(340, 252);
+vertex(320, 233);
+vertex(301, 231);
+vertex(288, 237);
+vertex(280, 242);
+vertex(278, 247);
+vertex(286, 253);
+vertex(299, 257);
+vertex(316, 257);
+vertex(334, 256);
+endShape();
+
+//left eye white
+fill(210, 208, 214)
+beginShape();
+vertex(294, 253);
+vertex(289, 246);
+vertex(293, 240);
+vertex(317, 236);
+vertex(331, 247);
+vertex(334, 256);
+vertex(316, 257);
+vertex(299, 257);
+endShape();
+
+//left iris
+fill(3, 69, 61)
+beginShape();
+vertex(312, 257);
+vertex(317, 250);
+vertex(317, 236);
+vertex(307, 235);
+vertex(298, 236);
+vertex(293, 239);
+vertex(294, 250);
+vertex(296, 254);
+vertex(300, 257);
+endShape();
+
+//tearduct
+fill(227, 192, 186);
+beginShape();
+vertex(339, 253);
+vertex(334, 256);
+vertex(331, 247);
+endShape();
+
+//eye shine
+fill(255);
+beginShape();
+vertex(319, 247);
+vertex(315, 246)
+vertex(317, 244);
+vertex(321, 246);
+endShape();
+beginShape();
+vertex(401, 246);
+vertex(404, 244);
+vertex(406, 247);
+endShape();
+
+//nose
+fill(115, 86, 77);
+beginShape();
+vertex(390, 295);
+vertex(388, 305);
+vertex(381, 313);
+vertex(347, 310);
+vertex(340, 303);
+vertex(354, 296);
+vertex(375, 298);
+endShape();
+
+//bottom lip
+fill(232, 162, 149);
+beginShape();
+vertex(332, 339);
+vertex(345, 349);
+vertex(363, 351);
+vertex(384, 351);
+vertex(395, 341);
+vertex(384, 337);
+vertex(358, 336);
+endShape();
+
+//upper lip
+fill(214, 143, 129);
+beginShape();
+vertex(326, 339);
+vertex(361, 331);
+vertex(372, 335);
+vertex(383, 332);
+vertex(398, 342);
+vertex(384, 340);
+vertex(372, 343);
+vertex(363, 341);
+vertex(345, 340);
+endShape();
+
+//lip shadow
+fill(43, 5, 0, 150);
+beginShape();
+vertex(327, 339);
+vertex(334, 340);
+vertex(331, 337);
+vertex(328, 338);
+endShape();
+
+beginShape();
+vertex(398, 340);
+vertex(394, 340);
+vertex(393, 341);
+vertex(398, 343);
+endShape();
+
+}
+</pre>
 </body>
 </html>
