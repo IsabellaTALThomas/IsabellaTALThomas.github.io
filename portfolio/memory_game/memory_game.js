@@ -16,7 +16,7 @@ var revealDuration = 0;
 var revealStartTime = 0;
 var revealPhase = true;
 
-var retryRevealDuration = 1000;
+var retryRevealDuration = 2500;
 var retryRevealStart = 0;
 var showingRetryReveal = false;
 
@@ -101,23 +101,23 @@ function startRound(currentRound) {
   if (currentRound == 1) {
     cols = 4;
     rows = 4;
-    revealDuration = 3000;
+    revealDuration = 2400;
   } else if (currentRound == 2) {
     cols = 5;
     rows = 4;
-    revealDuration = 2900;
+    revealDuration = 2300;
   } else if (currentRound == 3) {
     cols = 5;
     rows = 5;
-    revealDuration = 2800;
+    revealDuration = 2200;
   } else if (currentRound == 4) {
     cols = 6;
     rows = 5;
-    revealDuration = 2700;
+    revealDuration = 2100;
   } else if (currentRound == 5) {
     cols = 6;
     rows = 6;
-    revealDuration = 2600;
+    revealDuration = 2000;
   }
 
   cellSize = min(width / cols, (height - topMargin - bottomMargin) / rows);
@@ -194,6 +194,7 @@ function drawLives() {
   }
 }
 
+//lives display
 function drawHeart(x, y, s) {
   fill(255, 0, 80);
   noStroke();
@@ -238,16 +239,20 @@ function drawNormalStar(x, y, size) {
   push();
   translate(x, y);
 
+//star body
   fill(255, 215, 0);
   stroke(0);
   strokeWeight(1);
   star(0, 0, size * 0.48, size, 5);
 
+//eyes
   fill(0);
   noStroke();
   ellipse(-size * 0.18, -size * 0.08, size * 0.08, size * 0.08);
   ellipse(size * 0.18, -size * 0.08, size * 0.08, size * 0.08);
 
+
+//happy mouth
   noFill();
   stroke(0);
   strokeWeight(1);
@@ -265,11 +270,19 @@ function drawSpecialStar(x, y, size) {
   strokeWeight(1);
   star(0, 0, size * 0.48, size, 5);
 
+//eyes
   fill(0);
   noStroke();
   ellipse(-size * 0.18, -size * 0.08, size * 0.08, size * 0.08);
   ellipse(size * 0.18, -size * 0.08, size * 0.08, size * 0.08);
 
+// frowning eyebrows
+  stroke(0);
+  strokeWeight(2);
+  line(-size * 0.28, -size * 0.18, -size * 0.10, -size * 0.12);
+  line(size * 0.10, -size * 0.12, size * 0.28, -size * 0.18);
+
+//sad mouth
   noFill();
   stroke(0);
   strokeWeight(1);
@@ -282,6 +295,7 @@ function drawHiddenStar(x, y, size) {
   push();
   translate(x, y);
 
+//hidden star body gray
   fill(180);
   stroke(120);
   strokeWeight(1);
