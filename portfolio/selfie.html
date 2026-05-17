@@ -45,6 +45,9 @@
 	<li class="nav-item">
 		<a class="nav-link" href="game.html">Memory Game</a>
 	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="final.html">Final</a>
+	</li>
 
 </ul>
 </div>
@@ -63,7 +66,19 @@ I love making portraits, so doing this project was right up my alley. My referen
 </div>
 <br>
 
-<pre>
+<div class="text-center mt-4">
+<p>
+</p>
+</div>
+
+<div class="text-center mt-4">
+
+<button class="btn btn-dark" onclick="toggleCode()">View Code</button>
+<button class="btn btn-outline-dark" onclick="copyCode()">Copy Code</button>
+
+<pre id="codeBlock" style="display:none; text-align:left; background:#f4f4f4; padding:15px; border-radius:8px; max-height:400px; overflow:auto;">
+<code>
+
 function setup() {
 createCanvas(600, 600);
 background(202, 193, 222)
@@ -550,9 +565,10 @@ vertex(393, 341);
 vertex(398, 343);
 endShape();
 }
+</code>
 </pre>
 
-
+</div>
 
 <style>
 body{
@@ -562,6 +578,20 @@ font-family:Arial;
 text-align:center;
 padding:40px;
 }
+
+.nav-link{
+color:#7A5C74;
+}
+
+.nav-link:hover{
+color:#9A7C94;
+}
+
+.nav-link.active{
+color:white !important;
+background-color:#7A5C74 !important;
+}
+</style>
 
 
 </body>
